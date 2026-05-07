@@ -42,6 +42,12 @@
 Laporan ini membahas desain dan simulasi rangkaian gerbang logika dasar, yaitu _inverter_ CMOS (_Complementary Metal-Oxide-Semiconductor_), menggunakan teknologi PDK (_Process Design Kit_) Skywater 130nm. Tujuan dari tugas ini adalah untuk mengimplementasikan skematik _inverter_ pada perangkat lunak Xschem dan menyimulasikan karakteristik operasionalnya pada simulator Ngspice, baik dalam domain waktu (_transient_) maupun karakteristik transfer tegangan (DC), menggunakan simulator Ngspice. Desain disesuaikan dengan parameter spesifik berdasarkan aturan penugasan yang merujuk pada digit terakhir NRP.
 
 = Desain Rangkaian Skematik
+
+#figure(
+  image("cmos_inverter.svg", width: 35%),
+  caption: [Skematik desain _inverter_ CMOS menggunakan PDK Skywater 130nm.],
+) <inverter>
+
 Desain gerbang logika _inverter_ pada tugas ini mengimplementasikan arsitektur CMOS (_Complementary Metal-Oxide-Semiconductor_) standar yang terdiri dari dua buah transistor berlawanan tipe. Rangkaian ini dibangun dengan meletakkan satu transistor PMOS (`pfet_01v8`) pada bagian _pull-up network_ (PUN) yang terhubung ke sumber tegangan suplai ($V_"DD"$), dan satu transistor NMOS (`nfet_01v8`) pada bagian _pull-down network_ (PDN) yang terhubung ke _ground_ (GND). Konfigurasi komplementer ini memastikan bahwa dalam keadaan _steady state_, hanya ada satu jaringan yang aktif, sehingga meminimalisasi disipasi daya statis dan terhindar dari kondisi _short-circuit_. Tegangan suplai operasional ($V_"DD"$) yang digunakan pada rancangan ini adalah 1.8 V, yang merupakan tegangan nominal standar untuk divais logika dasar pada _Process Design Kit_ (PDK) Skywater 130nm.
 
 Penentuan dimensi fisik tiap transistor merupakan parameter paling krusial dalam menentukan performa rangkaian terintegrasi. Sesuai dengan spesifikasi _design rules_ pada teknologi Sky130, panjang _channel_ (_Length_ / $L$) untuk kedua transistor diatur pada batas resolusi fabrikasi minimum yang diizinkan, yaitu $0.15 mu"m"$. Penggunaan panjang _channel_ minimum ini bertujuan untuk mereduksi kapasitansi parasitik internal, menurunkan resistansi saluran, dan memaksimalkan kecepatan peralihan status logika (_switching speed_). Di sisi lain, parameter lebar _channel_ (_Width_ / $W$) didesain secara spesifik berdasarkan kombinasi aturan penugasan dan prinsip fisika semikonduktor. Lebar transistor NMOS ditetapkan mengikuti digit terakhir Nomor Registrasi Pokok (NRP), yaitu $W_n = 8 mu"m"$. Berbeda dengan NMOS, lebar _channel_ transistor PMOS tidak dibuat identik, melainkan didesain tiga kali lipat lebih besar menjadi $W_p = 24 mu"m"$. 
@@ -49,6 +55,51 @@ Penentuan dimensi fisik tiap transistor merupakan parameter paling krusial dalam
 Rasio asimetris $W_p / W_n = 3$ ini diimplementasikan untuk menjaga keseimbangan karakteristik dinamis rangkaian. Dalam struktur silikon kristalin, elektron---pembawa muatan mayoritas pada NMOS---memiliki tingkat mobilitas ($mu_n$) sekitar dua hingga tiga kali lebih tinggi dibandingkan dengan _hole_---pembawa muatan mayoritas pada PMOS, $mu_p$. Apabila PMOS dan NMOS dibuat dengan dimensi yang persis sama, resistansi konduksi pada PUN akan jauh lebih besar daripada PDN, yang mengakibatkan pelebaran waktu transisi naik (_rise time_) dibandingkan dengan waktu transisi turun (_fall time_). 
 
 Dengan memperbesar area penampang PMOS sebesar tiga kali lipat, konduktivitas saluran PMOS dikompensasi agar setara dengan kemampuan NMOS. Kesetaraan tarikan arus ini menghasilkan kurva peralihan yang simetris, di mana titik tegangan ambang logika (_switching threshold_ / $V_M$) akan terpusat ideal di kisaran separuh dari tegangan suplai ($V_"DD" / 2$). Kondisi simetris ini sangat vital untuk mengoptimalkan _noise margin_ gerbang logika digital terhadap fluktuasi sinyal.
+
+= Kode SPICE
+Kode SPICE untuk simulasi rangkaian inverter CMOS ini diekstraksi secara otomatis dari skematik yang telah digambar di Xschem. Kode ini mencakup definisi model transistor PMOS dan NMOS, serta _setup_ untuk simulasi _transient_ dan _DC sweep_. Berikut adalah kode SPICE yang digunakan:
+
+#figure(
+  ```spice
+  .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+  * Voltage source definition
+  Vdd vdd 0 1.8
+  Vin Vin 0 pulse(0 1.8 1ns 100ps 100ps 2ns 4ns)
+
+  * Transient simulation
+  .tran 10ps 10ns
+
+  * DC sweep simulation (input from 0V to 1.8V)
+  .dc Vin 0 1.8 0.01
+
+  .control
+  save all
+  run
+
+  * Plot setting
+  set color0=white
+  set color1=black
+  set color2=red
+  set color3=blue
+  set xbrushwidth=3
+
+  * Show plot
+  plot Vin Vout
+  plot Vout vs Vin
+
+  * Export to svg
+  set hcopydevtype=svg
+
+  * Save plot
+  hardcopy ~/tmp/grafik_transient.svg Vin Vout
+  hardcopy ~/tmp/grafik_dc.svg Vout vs Vin
+  .endc
+  ```,
+  caption: [Kode SPICE untuk simulasi _transient_ dan _DC sweep_ pada rangkaian _inverter_ CMOS.],
+  supplement: [Listing],
+  kind: "listing"
+) <spice>
 
 = Hasil Simulasi dan Analisis
 Simulasi rangkaian dilakukan melalui pengekstraksian _netlist_ SPICE dari skematik Xschem untuk kemudian dieksekusi oleh simulator Ngspice. Parameter simulasi yang diujikan mencakup respons dinamis (_Transient_) dan respons statis DC (_DC Sweep_).
