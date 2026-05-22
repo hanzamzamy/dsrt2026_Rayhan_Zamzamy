@@ -3,8 +3,7 @@ G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
 spectre_format="@name ( @pinlist ) @symname"
-template="name=x1"
-}
+template="name=x1"}
 V {}
 S {}
 F {}
