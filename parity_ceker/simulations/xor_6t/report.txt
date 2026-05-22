@@ -1,9 +1,0 @@
-=== UNIVERSAL GATE REPORT ===
-Propagation Delay:
-t_delay = 9.132626e-09
-Dynamic Power:
-p_dyn = 7.307908e-08
-Static Power:
-p_stat = 5.890964e-10
-Power Delay Product:
-pdp = 6.674039e-16

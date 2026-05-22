@@ -1,9 +1,0 @@
-=== 8-BIT PARITY TREE REPORT ===
-Worst-Case Path Delay:
-t_delay = 4.337481e-09
-Average Dynamic Power:
-p_dyn = 2.360876e-05
-Static Leakage Power:
-p_stat = 2.527636e-08
-Power Delay Product:
-pdp = 1.024026e-13
