@@ -1,0 +1,107 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  width="100%" height="100%" viewBox="0 0 1024 768"
+  style="fill: none; stroke-width: 3; font-family: Helvetica;
+ font: Helvetica;
+">
+
+<!-- Creator: NGspice -->
+
+<rect x="0" y="0" width="1024" height="768" fill="white" stroke="none"/>
+<text stroke="none" fill="black" font-size="16" x="358" y="752">
+v(in_a)
+</text>
+<text stroke="none" fill="black" font-size="16" x="10" y="16">
+dc1: DC: VTC and Noise Margins
+</text>
+<path stroke="black" stroke-width="3" d="M50 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="35" y="728">
+0.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M152 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="137" y="728">
+0.2
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M254 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="239" y="728">
+0.4
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M356 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="341" y="728">
+0.6
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M458 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="443" y="728">
+0.8
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M560 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="545" y="728">
+1.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M662 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="647" y="728">
+1.2
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M764 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="749" y="728">
+1.4
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M866 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="851" y="728">
+1.6
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M968 704l0 -637"/>
+<text stroke="none" fill="black" font-size="16" x="953" y="728">
+1.8
+</text>
+<text stroke="none" fill="black" font-size="16" x="614" y="752">
+V
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 704l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="8" y="712">
+-5.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 613l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="8" y="621">
+-4.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 522l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="8" y="530">
+-3.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 431l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="8" y="439">
+-2.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 340l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="8" y="348">
+-1.0
+</text>
+<path stroke="black" stroke-width="3" d="M50 249l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="257">
+0.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 158l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="166">
+1.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 67l918 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="75">
+2.0
+</text>
+<text stroke="none" fill="black" font-size="16" x="10" y="32">
+V
+</text>
+<path stroke="red" d="M459 23l45 0"/>
+<text stroke="none" fill="black" font-size="16" x="514" y="32">
+v(y)
+</text>
+<path stroke="red" d="M50 249l434 0 10 -2 5 -22 5 -54 5 -4 20 -4 6 0 45 -9 6 -1 5 0 40 -8 6 -1 5 -1 5 0 35 -7 6 -1 10 -2 5 0 30 -6 6 -1 15 -3 5 0 25 -5 6 -1 20 -4 5 0 20 -4 6 -1 30 -6 5 0 10 -2 6 -1 35 -7 5 0 5 -1 6 -1 25 -5"/>
+<path stroke="blue" d="M50 23l45 0"/>
+<text stroke="none" fill="black" font-size="16" x="105" y="32">
+deriv(v(y))
+</text>
+<path stroke="blue" d="M50 249l383 0 5 -1 15 0 5 -1 5 0 10 -4 5 -5 6 -13 5 -50 0 -108M510 67l4 85 5 6 449 0"/>
+</svg>

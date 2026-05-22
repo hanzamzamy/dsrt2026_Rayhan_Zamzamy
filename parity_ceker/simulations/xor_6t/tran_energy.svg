@@ -1,0 +1,120 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  width="100%" height="100%" viewBox="0 0 1024 768"
+  style="fill: none; stroke-width: 3; font-family: Helvetica;
+ font: Helvetica;
+">
+
+<!-- Creator: NGspice -->
+
+<rect x="0" y="0" width="1024" height="768" fill="white" stroke="none"/>
+<text stroke="none" fill="black" font-size="16" x="358" y="752">
+time
+</text>
+<text stroke="none" fill="black" font-size="16" x="10" y="16">
+tran1: Transient: Cumulative Energy
+</text>
+<path stroke="black" stroke-width="3" d="M60 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="45" y="728">
+0.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M150 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="130" y="728">
+10.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M240 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="220" y="728">
+20.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M330 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="310" y="728">
+30.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M420 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="400" y="728">
+40.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M510 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="490" y="728">
+50.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M600 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="580" y="728">
+60.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M690 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="670" y="728">
+70.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M780 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="760" y="728">
+80.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M870 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="850" y="728">
+90.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M960 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="935" y="728">
+100.0
+</text>
+<text stroke="none" fill="black" font-size="16" x="614" y="752">
+ns
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M60 704l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="8" y="712">
+-20.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M60 640l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="8" y="648">
+-15.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M60 576l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="8" y="584">
+-10.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M60 512l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="520">
+-5.0
+</text>
+<path stroke="black" stroke-width="3" d="M60 448l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="28" y="456">
+0.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M60 384l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="28" y="392">
+5.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M60 320l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="328">
+10.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M60 256l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="264">
+15.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M60 192l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="200">
+20.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M60 128l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="136">
+25.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M60 64l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="72">
+30.0
+</text>
+<text stroke="none" fill="black" font-size="16" x="10" y="32">
+f     
+</text>
+<path stroke="red" d="M450 23l45 0"/>
+<text stroke="none" fill="black" font-size="16" x="505" y="32">
+total_energy
+</text>
+<path stroke="red" d="M60 448l9 0M69 624l0 -176M69 624l1 16M70 666l0 -26M70 655l81 0 0 -37M151 619l1 6M152 675l0 -50M152 675l89 0 0 -165 1 -40 0 -183 7 0M249 381l0 -94M249 381l1 17M250 503l0 -105M250 503l81 0 0 -126 1 -25 0 -64 97 0M429 463l0 -175"/>
+<path stroke="red" d="M429 463l1 16M430 505l0 -26M430 495l81 0 0 -37 1 7M512 515l0 -50M512 515l89 0 0 -166 1 -39 0 -183 7 0M609 220l0 -93M609 220l1 17M610 342l0 -105M610 342l81 0 0 -126 1 -24 0 -65 97 0M789 303l0 -176M789 303l1 16M790 345l0 -26"/>
+<path stroke="red" d="M790 334l81 0 0 -37M871 298l1 6M872 355l0 -51M872 355l38 0 0 -1 50 0"/>
+</svg>
