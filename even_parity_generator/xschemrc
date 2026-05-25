@@ -2,7 +2,6 @@
 
 catch {source ~/.xschem/xschemrc}
 
-# set CHIP_ROOT [file normalize [file dirname [info script]]]
 set ::CHIP_ROOT [file normalize [file dirname [info script]]]
 
 set env(PDK_ROOT) /foss/pdks
