@@ -1,0 +1,13 @@
+=== 8-BIT PARITY GENERATOR XOR 12T UNBALANCED REPORT ===
+Worst-Case Path Delay:
+t_delay = 7.501940e-11
+Output Rise Time:
+t_rise = 8.949861e-09
+Output Fall Time:
+t_fall = -5.81658e-09
+Average Dynamic Power:
+p_dyn = 5.117204e-05
+Static Leakage Power:
+p_stat = 1.953509e-07
+Power Delay Product:
+pdp = 3.838896e-15
