@@ -1,0 +1,26 @@
+** sch_path: /workspace/project/even_parity_generator/testbench/spice/tb_not.sch
+**.subckt tb_not IN_A Y
+*.ipin IN_A
+*.opin Y
+x1 VDD IN_A Y 0 not_std
+**** begin user architecture code
+
+.include /workspace/project/even_parity_generator/testbench/spice/code/not_std.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  schematic/not_std.sym # of pins=4
+** sym_path: /workspace/project/even_parity_generator/schematic/not_std.sym
+** sch_path: /workspace/project/even_parity_generator/schematic/not_std.sch
+.subckt not_std VDD A Y GND
+*.ipin A
+*.opin Y
+*.iopin VDD
+*.iopin GND
+XM1 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0 mult=1
+XM2 Y A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1
+.ends
+
+.GLOBAL VDD
+.end

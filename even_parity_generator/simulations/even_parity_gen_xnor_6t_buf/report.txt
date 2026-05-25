@@ -1,0 +1,13 @@
+=== 8-BIT PARITY GENERATOR XNOR REPORT ===
+Worst-Case Path Delay:
+t_delay = 4.337481e-09
+Output Rise Time:
+t_rise = 2.952401e-11
+Output Fall Time:
+t_fall = 2.161818e-11
+Average Dynamic Power:
+p_dyn = 2.422793e-05
+Static Leakage Power:
+p_stat = 2.527636e-08
+Power Delay Product:
+pdp = 1.050882e-13

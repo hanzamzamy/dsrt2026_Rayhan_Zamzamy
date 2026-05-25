@@ -2,17 +2,20 @@
 
 catch {source ~/.xschem/xschemrc}
 
+# set CHIP_ROOT [file normalize [file dirname [info script]]]
+set ::CHIP_ROOT [file normalize [file dirname [info script]]]
+
 set env(PDK_ROOT) /foss/pdks
 set env(PDK) sky130A
 set PDK_ROOT /foss/pdks
 set PDK sky130A
+set SKYWATER_MODELS $PDK_ROOT/$PDK/libs.tech/ngspice
+set SKYWATER_STDCELLS $PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hd/spice
 
 append XSCHEM_LIBRARY_PATH :$PDK_ROOT/$PDK/libs.tech/xschem
 
 append XSCHEM_LIBRARY_PATH :$env(PWD)
+append XSCHEM_LIBRARY_PATH :[file join $CHIP_ROOT schematic]
 
-set SKYWATER_MODELS $PDK_ROOT/$PDK/libs.tech/ngspice
-set SKYWATER_STDCELLS $PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hd/spice
+set netlist_dir "$CHIP_ROOT/simulations"
 
-set netlist_dir $env(PWD)/simulations
-# set local_netlist_dir 1

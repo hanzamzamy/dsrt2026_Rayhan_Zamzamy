@@ -1,6 +1,10 @@
-=== XOR GATE REPORT ===
+=== XOR 6T GATE REPORT ===
 Propagation Delay:
 t_delay = 9.132626e-09
+Rise Time:
+t_rise = 9.188926e-09
+Fall Time:
+t_fall = -1.90143e-08
 Dynamic Power:
 p_dyn = 7.307908e-08
 Static Power:

@@ -1,0 +1,80 @@
+** sch_path: /workspace/project/even_parity_generator/testbench/spice/tb_even_parity_gen_xor_12t.sch
+**.subckt tb_even_parity_gen_xor_12t OUT_PARITY IN_0 IN_1 IN_2 IN_3 IN_4 IN_5 IN_6 IN_7
+*.opin OUT_PARITY
+*.ipin IN_0
+*.ipin IN_1
+*.ipin IN_2
+*.ipin IN_3
+*.ipin IN_4
+*.ipin IN_5
+*.ipin IN_6
+*.ipin IN_7
+x1 VDD 0 IN_0 IN_1 IN_2 IN_3 OUT_PARITY IN_4 IN_5 IN_6 IN_7 even_parity_gen_xor_12t
+**** begin user architecture code
+
+.include /workspace/project/even_parity_generator/testbench/spice/code/even_parity_gen_xor_12t.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  schematic/even_parity_gen_xor_12t.sym # of pins=11
+** sym_path: /workspace/project/even_parity_generator/schematic/even_parity_gen_xor_12t.sym
+** sch_path: /workspace/project/even_parity_generator/schematic/even_parity_gen_xor_12t.sch
+.subckt even_parity_gen_xor_12t VDD GND I0 I1 I2 I3 O0 I4 I5 I6 I7
+*.iopin VDD
+*.iopin GND
+*.ipin I0
+*.ipin I1
+*.ipin I2
+*.ipin I3
+*.ipin I4
+*.ipin I5
+*.ipin I6
+*.ipin I7
+*.opin O0
+x1 VDD net1 I0 I1 GND xor_12t
+x2 VDD net2 I2 I3 GND xor_12t
+x3 VDD net3 I4 I5 GND xor_12t
+x4 VDD net4 I6 I7 GND xor_12t
+x5 VDD net6 net1 net2 GND xor_12t
+x6 VDD net5 net3 net4 GND xor_12t
+x7 VDD O0 net6 net5 GND xor_12t
+.ends
+
+
+* expanding   symbol:  schematic/xor_12t.sym # of pins=5
+** sym_path: /workspace/project/even_parity_generator/schematic/xor_12t.sym
+** sch_path: /workspace/project/even_parity_generator/schematic/xor_12t.sch
+.subckt xor_12t VDD Y A B GND
+*.ipin A
+*.opin Y
+*.iopin VDD
+*.iopin GND
+*.ipin B
+XM1 A_inv A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM2 A_inv A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+XM3 B_inv B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM4 B_inv B GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+XM5 net1 B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM6 Y A_inv net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM7 net2 A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM8 Y B_inv net2 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM9 Y A net3 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1
+XM10 net3 B GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+XM11 Y A_inv net4 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+XM12 net4 B_inv GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+.ends
+
+.GLOBAL VDD
+.end

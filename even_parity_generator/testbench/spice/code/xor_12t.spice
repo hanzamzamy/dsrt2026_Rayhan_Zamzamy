@@ -2,8 +2,9 @@
 
 * --- VOLTAGE SOURCES ---
 V_SUPPLY VDD 0 1.8
-* IN_A period is 40ns to test all 2 states (0, 1)
+* IN_A period is 40ns, IN_B period is 20ns to test all 4 states (00, 01, 10, 11)
 V_A IN_A 0 pulse(0 1.8 1ns 100ps 100ps 19ns 40ns)
+V_B IN_B 0 pulse(0 1.8 1ns 100ps 100ps 9ns 20ns)
 
 * --- SIMULATION COMMANDS ---
 .tran 10p 100n
@@ -44,7 +45,7 @@ V_A IN_A 0 pulse(0 1.8 1ns 100ps 100ps 19ns 40ns)
   let pdp = p_dyn * t_delay
 
   * --- EXPORT CLEAN REPORT ---
-  echo === NOT GATE REPORT === > report.txt
+  echo === XOR 12T GATE REPORT === > report.txt
   echo Propagation Delay: >> report.txt
   print t_delay >> report.txt
   echo Rise Time: >> report.txt
@@ -58,12 +59,12 @@ V_A IN_A 0 pulse(0 1.8 1ns 100ps 100ps 19ns 40ns)
   echo Power Delay Product: >> report.txt
   print pdp >> report.txt
 
-  * --- 5. ADVANCED DATA PROCESSING & RAW EXPORT ---
+  * --- ADVANCED DATA PROCESSING & RAW EXPORT ---
   setplot tran1
   let inst_power = -i(V_SUPPLY) * 1.8
   let total_energy = integ(inst_power)
 
-  write not_gate.raw
+  write xor_12t_gate.raw
 
   * --- EXPORT PLOTS (SVG) ---
   set hcopydevtype=svg
@@ -75,7 +76,7 @@ V_A IN_A 0 pulse(0 1.8 1ns 100ps 100ps 19ns 40ns)
   
   * Save Transient Plots (Separated cleanly)
   setplot tran1
-  hardcopy tran_inputs.svg v(in_a) title 'Transient: Logic Inputs'
+  hardcopy tran_inputs.svg v(in_a) v(in_b) title 'Transient: Logic Inputs'
   hardcopy tran_output.svg v(y) title 'Transient: Logic Output'
   hardcopy tran_current.svg -i(V_SUPPLY) title 'Transient: Total Supply Current'
   hardcopy tran_energy.svg total_energy title 'Transient: Cumulative Energy'
@@ -89,7 +90,7 @@ V_A IN_A 0 pulse(0 1.8 1ns 100ps 100ps 19ns 40ns)
   
   * Transient Plots (Separated cleanly)
   setplot tran1
-  plot v(in_a) title 'Logic Input (A)'
+  plot v(in_a) v(in_b) title 'Logic Inputs (IN_A, IN_B)'
   plot v(y) title 'Logic Output (Y)'
   plot -i(V_SUPPLY) title 'Total Supply Current (Crowbar & Dynamic)'
   plot total_energy title 'Cumulative Energy Consumption'

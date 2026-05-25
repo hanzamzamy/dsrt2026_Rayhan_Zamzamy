@@ -27,6 +27,13 @@ V_B IN_B 0 pulse(0 1.8 1ns 100ps 100ps 9ns 20ns)
   
   * Universal Delay: measures time between first input crossing and first output crossing
   meas tran t_delay trig v(in_a) val=0.9 cross=1 targ v(y) val=0.9 cross=1
+
+  * --- RISE & FALL TIME MEASUREMENTS ---
+  * Rise Time: Time to go from 10% (0.18V) to 90% (1.62V) on the first rising edge
+  meas tran t_rise trig v(y) val=0.18 rise=1 targ v(y) val=1.62 rise=1
+
+  * Fall Time: Time to go from 90% (1.62V) to 10% (0.18V) on the first falling edge
+  meas tran t_fall trig v(y) val=1.62 fall=1 targ v(y) val=0.18 fall=1
   
   * Power Analysis
   meas tran avg_i avg i(V_SUPPLY)
@@ -38,9 +45,13 @@ V_B IN_B 0 pulse(0 1.8 1ns 100ps 100ps 9ns 20ns)
   let pdp = p_dyn * t_delay
 
   * --- EXPORT CLEAN REPORT ---
-  echo === XOR GATE REPORT === > report.txt
+  echo === XOR 6T GATE REPORT === > report.txt
   echo Propagation Delay: >> report.txt
   print t_delay >> report.txt
+  echo Rise Time: >> report.txt
+  print t_rise >> report.txt
+  echo Fall Time: >> report.txt
+  print t_fall >> report.txt
   echo Dynamic Power: >> report.txt
   print p_dyn >> report.txt
   echo Static Power: >> report.txt
@@ -53,7 +64,7 @@ V_B IN_B 0 pulse(0 1.8 1ns 100ps 100ps 9ns 20ns)
   let inst_power = -i(V_SUPPLY) * 1.8
   let total_energy = integ(inst_power)
 
-  write xor_gate.raw
+  write xor_6t_gate.raw
 
   * --- EXPORT PLOTS (SVG) ---
   set hcopydevtype=svg

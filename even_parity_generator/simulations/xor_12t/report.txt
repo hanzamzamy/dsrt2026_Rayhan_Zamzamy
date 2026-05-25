@@ -1,0 +1,13 @@
+=== XOR 12T GATE REPORT ===
+Propagation Delay:
+t_delay = 9.169167e-09
+Rise Time:
+t_rise = 9.159631e-09
+Fall Time:
+t_fall = -1.90975e-08
+Dynamic Power:
+p_dyn = 2.410909e-06
+Static Power:
+p_stat = 1.105604e-08
+Power Delay Product:
+pdp = 2.210603e-14

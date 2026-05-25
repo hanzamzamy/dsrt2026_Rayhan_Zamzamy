@@ -1,9 +1,13 @@
+module not_std (input A, output Y, inout VDD, inout GND);
+    assign Y = ~A;
+endmodule
+
 module xor_6t (input A, input B, output Y, inout VDD, inout GND);
     assign Y = A ^ B;
 endmodule
 
-module not_std (input A, output Y, inout VDD, inout GND);
-    assign Y = ~A;
+module xor_12t (input A, input B, output Y, inout VDD, inout GND);
+    assign Y = A ^ B;
 endmodule
 
 module xnor_6t_buf (input A, input B, output Y, inout VDD, inout GND);
