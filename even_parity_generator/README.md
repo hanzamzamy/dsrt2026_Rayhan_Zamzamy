@@ -171,6 +171,6 @@ The following tables summarize the key performance metrics for the different imp
 - [x] Gate-level simulation
 - [x] Circuit-level schematic
 - [x] Circuit-level simulation
-- [] Gate-level Layout
-- [] Circuit-level Layout
-- [] Final report
+- [ ] Gate-level Layout
+- [ ] Circuit-level Layout
+- [ ] Final report
