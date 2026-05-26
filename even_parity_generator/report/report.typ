@@ -173,8 +173,9 @@ Simulasi rangkaian dilakukan dengan mengekstraksi _netlist_ dari skematik Xschem
     table.header(
       [*Implementasi*], [*Sukses*], [*Gagal*], [*Keberhasilan*]
     ),
-    [XOR], [256], [0], [100%],
-    [XNOR], [256], [0], [100%],
+    [XOR (_Balanced_)], [256], [0], [100%],
+    [XOR (_Unbalanced_)], [256], [0], [100%],
+    [XNOR (_Balanced_)], [256], [0], [100%],
   ),
   kind: table,
   caption: "Hasil verifikasi fungsional digital",

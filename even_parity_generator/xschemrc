@@ -16,5 +16,5 @@ append XSCHEM_LIBRARY_PATH :$PDK_ROOT/$PDK/libs.tech/xschem
 append XSCHEM_LIBRARY_PATH :$env(PWD)
 append XSCHEM_LIBRARY_PATH :[file join $CHIP_ROOT schematic]
 
-set netlist_dir "$CHIP_ROOT/simulations"
+set netlist_dir "$CHIP_ROOT/simulation"
 
