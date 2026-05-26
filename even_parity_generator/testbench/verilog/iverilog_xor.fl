@@ -1,0 +1,3 @@
+netlist/verilog/even_parity_gen_xor.v
+testbench/verilog/tb_even_parity_gen.v
+testbench/verilog/functional_models.v
