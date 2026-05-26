@@ -16,47 +16,47 @@ time
 <text stroke="none" fill="black" font-size="16" x="10" y="16">
 tran1: Transient: Cumulative Energy
 </text>
-<path stroke="black" stroke-width="3" d="M70 704l0 -636"/>
+<path stroke="black" stroke-width="3" d="M70 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="55" y="728">
 0.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M158 704l0 -636"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M158 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="138" y="728">
 10.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M246 704l0 -636"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M246 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="226" y="728">
 20.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M334 704l0 -636"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M334 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="314" y="728">
 30.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M422 704l0 -636"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M422 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="402" y="728">
 40.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M510 704l0 -636"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M510 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="490" y="728">
 50.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M598 704l0 -636"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M598 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="578" y="728">
 60.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M686 704l0 -636"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M686 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="666" y="728">
 70.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M774 704l0 -636"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M774 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="754" y="728">
 80.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M862 704l0 -636"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M862 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="842" y="728">
 90.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M950 704l0 -636"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M950 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="925" y="728">
 100.0
 </text>
@@ -67,29 +67,37 @@ ns
 <text stroke="none" fill="black" font-size="16" x="18" y="712">
 -50.0
 </text>
-<path stroke="black" stroke-width="3" d="M70 598l880 0"/>
-<text stroke="none" fill="black" font-size="16" x="38" y="606">
+<path stroke="black" stroke-width="3" d="M70 624l880 0"/>
+<text stroke="none" fill="black" font-size="16" x="38" y="632">
 0.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 492l880 0"/>
-<text stroke="none" fill="black" font-size="16" x="28" y="500">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 544l880 0"/>
+<text stroke="none" fill="black" font-size="16" x="28" y="552">
 50.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 386l880 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="394">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 464l880 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="472">
 100.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 280l880 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="288">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 384l880 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="392">
 150.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 174l880 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="182">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 304l880 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="312">
 200.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 68l880 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="76">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 224l880 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="232">
 250.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 144l880 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="152">
+300.0
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M70 64l880 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="72">
+350.0
 </text>
 <text stroke="none" fill="black" font-size="16" x="10" y="32">
 f     
@@ -98,7 +106,7 @@ f
 <text stroke="none" fill="black" font-size="16" x="494" y="32">
 total_energy
 </text>
-<path stroke="red" d="M70 598l9 0M79 635l0 -37M79 632l1 -6 0 -16 1 0 0 -1 1 0 0 -1 7 0 0 -1 27 0 0 -1 43 0 0 -19 1 -7 0 -49 1 -1 0 -1 8 0 0 -1 78 0 0 -19 1 -5 0 -43 7 0M255 479l0 -18M255 478l1 -4 0 -24 1 0 0 -1 46 0 0 -1 32 0 0 -18 1 -5 0 -47"/>
-<path stroke="red" d="M336 378l1 -1 94 0M431 414l0 -37M431 412l1 -7 0 -16 1 0 0 -1 3 0 0 -1 12 0 0 -1 49 0 0 -1 14 0 0 -18 1 -7 0 -50 1 0 0 -2 67 0 0 -1 19 0 0 -19 1 -5 0 -43 7 0M607 259l0 -19M607 257l1 -3 0 -24 1 -1 1 0 0 -1 77 0 0 -18 1 -6"/>
-<path stroke="red" d="M688 204l0 -47 95 0M783 194l0 -37M783 191l1 -7 0 -15 1 -1 1 0 0 -1 5 0 0 -1 22 0 1 -1 49 0 0 -19 1 -7 0 -49 1 -1 0 -1 4 0 0 -1 81 0"/>
+<path stroke="red" d="M70 624l9 0M79 638l0 -14M79 637l1 -2 0 -21 1 0 0 -1 6 0 0 -1 1 0M88 626l0 -19 1 -1 0 -8 1 -1 3 0 0 -1 20 0 0 -1 55 0 0 -33 1 -7 0 -18 3 0 1 -1 74 0 0 -14 1 -4 0 -33 16 0M264 499l0 -14M264 490l1 -1 0 -12 1 0 0 -1 78 0 0 -27"/>
+<path stroke="red" d="M344 449l1 -5 0 -22 86 0M431 436l0 -14M431 435l1 -2 0 -21 1 0 0 -1 7 0M440 424l0 -19 1 -1 0 -8 1 0 0 -1 4 0 0 -1 29 0 0 -1 45 0 0 -33 1 -7 0 -18 11 0 0 -1 67 0 0 -14 1 -4 0 -32 16 0M616 297l0 -13M616 288l1 -1 0 -12 3 0 0 -1"/>
+<path stroke="red" d="M620 274l76 0 0 -27 1 -5 0 -21 86 0M783 234l0 -13M783 233l1 -2 0 -21 1 0 0 -1 7 0M792 222l0 -19 1 -1 0 -8 1 0 0 -1 7 0 0 -1 42 0 0 -1 29 0 0 -33 1 -6 0 -18 1 -1 37 0 0 -1 39 0"/>
 </svg>

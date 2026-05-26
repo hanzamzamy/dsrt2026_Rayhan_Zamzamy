@@ -16,47 +16,47 @@ time
 <text stroke="none" fill="black" font-size="16" x="10" y="16">
 tran1: Transient: Logic Output
 </text>
-<path stroke="black" stroke-width="3" d="M50 704l0 -640"/>
+<path stroke="black" stroke-width="3" d="M50 704l0 -638"/>
 <text stroke="none" fill="black" font-size="16" x="35" y="728">
 0.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M142 704l0 -640"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M142 704l0 -638"/>
 <text stroke="none" fill="black" font-size="16" x="122" y="728">
 10.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M234 704l0 -640"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M234 704l0 -638"/>
 <text stroke="none" fill="black" font-size="16" x="214" y="728">
 20.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M326 704l0 -640"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M326 704l0 -638"/>
 <text stroke="none" fill="black" font-size="16" x="306" y="728">
 30.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M418 704l0 -640"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M418 704l0 -638"/>
 <text stroke="none" fill="black" font-size="16" x="398" y="728">
 40.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M510 704l0 -640"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M510 704l0 -638"/>
 <text stroke="none" fill="black" font-size="16" x="490" y="728">
 50.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M602 704l0 -640"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M602 704l0 -638"/>
 <text stroke="none" fill="black" font-size="16" x="582" y="728">
 60.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M694 704l0 -640"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M694 704l0 -638"/>
 <text stroke="none" fill="black" font-size="16" x="674" y="728">
 70.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M786 704l0 -640"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M786 704l0 -638"/>
 <text stroke="none" fill="black" font-size="16" x="766" y="728">
 80.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M878 704l0 -640"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M878 704l0 -638"/>
 <text stroke="none" fill="black" font-size="16" x="858" y="728">
 90.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M970 704l0 -640"/>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M970 704l0 -638"/>
 <text stroke="none" fill="black" font-size="16" x="945" y="728">
 100.0
 </text>
@@ -67,45 +67,49 @@ ns
 <text stroke="none" fill="black" font-size="16" x="8" y="712">
 -0.2
 </text>
-<path stroke="black" stroke-width="3" d="M50 640l920 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="648">
+<path stroke="black" stroke-width="3" d="M50 646l920 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="654">
 0.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 576l920 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="584">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 588l920 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="596">
 0.2
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 512l920 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="520">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 530l920 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="538">
 0.4
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 448l920 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="456">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 472l920 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="480">
 0.6
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 384l920 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="392">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 414l920 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="422">
 0.8
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 320l920 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="328">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 356l920 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="364">
 1.0
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 256l920 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="264">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 298l920 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="306">
 1.2
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 192l920 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="200">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 240l920 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="248">
 1.4
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 128l920 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="136">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 182l920 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="190">
 1.6
 </text>
-<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 64l920 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="72">
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 124l920 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="132">
 1.8
+</text>
+<path stroke="black" stroke-width="3" stroke-dasharray="1,2" d="M50 66l920 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="74">
+2.0
 </text>
 <text stroke="none" fill="black" font-size="16" x="10" y="32">
 V
@@ -114,7 +118,8 @@ V
 <text stroke="none" fill="black" font-size="16" x="516" y="32">
 v(y)
 </text>
-<path stroke="red" d="M50 640l9 0 0 -126 1 -54M60 640l0 -277M60 640l83 0M143 656l0 -17 1 -54 0 -521 91 0M235 270l0 -206M235 270l1 23M236 640l0 -347M236 640l7 0 0 -124 1 -50 0 -401 1 -1 82 0M327 277l0 -213M327 277l1 46M328 640l0 -317M328 640l99 0"/>
-<path stroke="red" d="M427 640l0 -126 1 -54M428 640l0 -277M428 640l83 0M511 656l0 -17 1 -54 0 -521 91 0M603 270l0 -206M603 270l1 23M604 640l0 -347M604 640l7 0 0 -124 1 -50 0 -401 1 -1 82 0M695 277l0 -213M695 277l1 46M696 640l0 -317M696 640l99 0"/>
-<path stroke="red" d="M795 640l0 -126 1 -54M796 640l0 -277M796 640l83 0M879 656l0 -17 1 -54 0 -521 90 0"/>
+<path stroke="red" d="M50 646l9 0 0 -1 1 1M60 647l0 -522 1 -1 7 0 0 -8 1 -4M69 640l0 -538M69 640l1 5M70 646l0 -1M70 646l82 0M152 660l0 -14M152 660l1 -1 0 -535 82 0M235 311l0 -187M235 311l1 20M236 646l0 -315M236 646l16 0 0 -24 1 -39 0 -451 1 -6"/>
+<path stroke="red" d="M254 126l0 -2 82 0M336 248l0 -124M336 248l1 36M337 646l0 -362M337 646l90 0 0 -1 1 1M428 647l0 -522 1 -1 7 0 0 -8 1 -4M437 640l0 -538M437 640l1 5M438 646l0 -1M438 646l82 0M520 660l0 -14M520 660l1 -1 0 -535 82 0M603 311l0 -187"/>
+<path stroke="red" d="M603 311l1 20M604 646l0 -315M604 646l16 0 0 -24 1 -39 0 -451 1 -6 0 -2 82 0M704 248l0 -124M704 248l1 36M705 646l0 -362M705 646l90 0 0 -1 1 1M796 647l0 -522 1 -1 7 0 0 -8 1 -4M805 640l0 -538M805 640l1 5M806 646l0 -1M806 646l82 0"/>
+<path stroke="red" d="M888 660l0 -14M888 660l1 -1 0 -535 81 0"/>
 </svg>

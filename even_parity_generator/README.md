@@ -143,20 +143,20 @@ The following tables summarize the key performance metrics for the different imp
 
 | Gate | Propagation Delay | Rise Time | Fall Time | Dynamic Power | Static Power | Power-Delay Product |
 |---|---|---|---|---|---|---|
-| **NOT Gate** | 18.97 ps | 30.47 ps | 21.95 ps | 111.08 nW | 0.58 nW | 2.11 fJ |
-| **XOR 6T** | 9.13 ns | 9.19 ns | 19.01 ns | 73.08 nW | 0.59 nW | 667.40 fJ |
-| **XOR 12T** | 9.17 ns | 9.16 ns | 19.10 ns | 2.41 µW | 11.06 nW | 22.11 pJ |
-| **XNOR 6T (Buffered)** | 9.16 ns | 20.03 ps | 15.35 ps | 361.34 nW | 1.62 nW | 3.31 pJ |
+| **NOT Gate** | 18.97 ps | 30.47 ps | 21.95 ps | 111.08 nW | 0.58 nW | 2.11 aJ |
+| **XOR 6T** | 43.11 ps | 30.53 ps | 33.04 ps | 128.04 nW | 0.59 nW | 5.52 aJ |
+| **XOR 12T** | 70.34 ps | 63.16 ps | 46.79 ps | 3.07 µW | 12.48 nW | 216.13 aJ |
+| **XNOR 6T (Buffered)** | 68.19 ps | 20.17 ps | 14.64 ps | 603.99 nW | 1.88 nW | 41.19 aJ |
 
 ### 8-Bit Parity Generator Performance
 
 | Implementation | Propagation Delay | Output Rise Time | Output Fall Time | Average Dynamic Power | Static Leakage Power | Power-Delay Product |
 |---|---|---|---|---|---|---|
-| **XOR 6T (Cascaded)** | 14.79 ps | 8.93 ns | 5.94 ns | 12.98 µW | 6.16 nW | 0.19 pJ |
-| **XOR 6T (Balanced)** | 4.30 ns | 9.11 ns | 5.87 ns | 5.55 µW | 57.44 nW | 23.87 pJ |
-| **XOR 12T (Cascaded)** | 75.02 ps | 8.95 ns | 5.82 ns | 51.17 µW | 195.35 nW | 3.84 pJ |
-| **XOR 12T (Balanced)** | 4.40 ns | 60.49 ps | 60.95 ps | 22.68 µW | 104.18 nW | 99.69 pJ |
-| **XNOR 6T (Balanced)** | 4.34 ns | 29.52 ps | 21.62 ps | 24.23 µW | 25.28 nW | 105.09 pJ |
+| **XOR 6T (Cascaded)** | 1.09 ns | 36.93 ns | -27.82 ns | 10.82 µW | 6.16 nW | 11.74 fJ |
+| **XOR 6T (Balanced)** | 211.40 ps | -40.89 ns | 50.01 ns | 5.30 µW | 57.44 nW | 1.12 fJ |
+| **XOR 12T (Cascaded)** | 771.07 ps | 62.75 ps | 57.68 ps | 48.66 µW | 194.61 nW | 37.52 fJ |
+| **XOR 12T (Balanced)** | 303.24 ps | 2.07 ns | -1.97 ns | 28.88 µW | 97.65 nW | 8.76 fJ |
+| **XNOR 6T (Balanced)** | 253.38 ps | 29.76 ps | 25.59 ps | 24.88 µW | 25.28 nW | 6.30 fJ |
 
 ### Digital Verification Results
 

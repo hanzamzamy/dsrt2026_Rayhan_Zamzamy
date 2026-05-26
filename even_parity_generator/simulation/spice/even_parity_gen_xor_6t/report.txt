@@ -1,13 +1,13 @@
 === 8-BIT PARITY GENERATOR XOR 6T REPORT ===
-Worst-Case Path Delay:
-t_delay = 4.298854e-09
+Path Delay:
+t_delay = 2.114043e-10
 Output Rise Time:
-t_rise = 9.106262e-09
+t_rise = -4.08940e-08
 Output Fall Time:
-t_fall = -5.87024e-09
+t_fall = 5.000635e-08
 Average Dynamic Power:
-p_dyn = 5.553070e-06
+p_dyn = 5.297994e-06
 Static Leakage Power:
-p_stat = 5.744038e-08
+p_stat = 5.744338e-08
 Power Delay Product:
-pdp = 2.387184e-14
+pdp = 1.120019e-15

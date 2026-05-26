@@ -5,13 +5,13 @@ V_SUPPLY VDD 0 1.8
 
 * Binary Counter Pattern: Periods double to test logic combinations
 V_IN0 IN_0 0 pulse(0 1.8 1ns 100ps 100ps 4ns 10ns)
-V_IN1 IN_1 0 pulse(0 1.8 1ns 100ps 100ps 9ns 20ns)
-V_IN2 IN_2 0 pulse(0 1.8 1ns 100ps 100ps 19ns 40ns)
-V_IN3 IN_3 0 pulse(0 1.8 1ns 100ps 100ps 39ns 80ns)
-V_IN4 IN_4 0 pulse(0 1.8 1ns 100ps 100ps 79ns 160ns)
-V_IN5 IN_5 0 pulse(0 1.8 1ns 100ps 100ps 159ns 320ns)
-V_IN6 IN_6 0 pulse(0 1.8 1ns 100ps 100ps 319ns 640ns)
-V_IN7 IN_7 0 pulse(0 1.8 1ns 100ps 100ps 639ns 1280ns)
+V_IN1 IN_1 0 pulse(0 1.8 2ns 100ps 100ps 9ns 20ns)
+V_IN2 IN_2 0 pulse(0 1.8 3ns 100ps 100ps 19ns 40ns)
+V_IN3 IN_3 0 pulse(0 1.8 4ns 100ps 100ps 39ns 80ns)
+V_IN4 IN_4 0 pulse(0 1.8 5ns 100ps 100ps 79ns 160ns)
+V_IN5 IN_5 0 pulse(0 1.8 6ns 100ps 100ps 159ns 320ns)
+V_IN6 IN_6 0 pulse(0 1.8 7ns 100ps 100ps 319ns 640ns)
+V_IN7 IN_7 0 pulse(0 1.8 8ns 100ps 100ps 639ns 1280ns)
 
 * --- SIMULATION COMMANDS ---
 * Run for 3000ns to capture a high variety of transition states
@@ -80,7 +80,7 @@ V_IN7 IN_7 0 pulse(0 1.8 1ns 100ps 100ps 639ns 1280ns)
 
   * --- EXPORT CLEAN REPORT ---
   echo === 8-BIT PARITY GENERATOR XOR 6T UNBALANCED REPORT === > report.txt
-  echo Worst-Case Path Delay: >> report.txt
+  echo Path Delay: >> report.txt
   print t_delay >> report.txt
   echo Output Rise Time: >> report.txt
   print t_rise >> report.txt

@@ -1,0 +1,13 @@
+=== 8-BIT PARITY GENERATOR XOR 6T BUFFER REPORT ===
+Path Delay:
+t_delay = 2.997030e-10
+Output Rise Time:
+t_rise = 3.215262e-11
+Output Fall Time:
+t_fall = 1.895881e-11
+Average Dynamic Power:
+p_dyn = 8.175872e-06
+Static Leakage Power:
+p_stat = -1.72033e-08
+Power Delay Product:
+pdp = 2.450333e-15

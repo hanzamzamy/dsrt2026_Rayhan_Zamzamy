@@ -4,7 +4,7 @@
 V_SUPPLY VDD 0 1.8
 * IN_A period is 40ns, IN_B period is 20ns to test all 4 states (00, 01, 10, 11)
 V_A IN_A 0 pulse(0 1.8 1ns 100ps 100ps 19ns 40ns)
-V_B IN_B 0 pulse(0 1.8 1ns 100ps 100ps 9ns 20ns)
+V_B IN_B 0 pulse(0 1.8 2ns 100ps 100ps 9ns 20ns)
 
 * --- SIMULATION COMMANDS ---
 .tran 10p 100n

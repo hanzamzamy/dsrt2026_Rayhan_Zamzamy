@@ -1,13 +1,13 @@
 === XNOR GATE REPORT ===
 Propagation Delay:
-t_delay = 9.160763e-09
+t_delay = 6.818899e-11
 Rise Time:
-t_rise = 2.003207e-11
+t_rise = 2.017255e-11
 Fall Time:
-t_fall = 1.534837e-11
+t_fall = 1.463825e-11
 Dynamic Power:
-p_dyn = 3.613428e-07
+p_dyn = 6.039859e-07
 Static Power:
-p_stat = 1.621071e-09
+p_stat = 1.878471e-09
 Power Delay Product:
-pdp = 3.310176e-15
+pdp = 4.118519e-17

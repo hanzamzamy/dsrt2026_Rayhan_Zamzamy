@@ -1,5 +1,5 @@
-** sch_path: /workspace/project/even_parity_generator/testbench/spice/tb_not.sch
-**.subckt tb_not IN_A Y
+** sch_path: /workspace/project/even_parity_generator/testbench/spice/tb_not_std.sch
+**.subckt tb_not_std IN_A Y
 *.ipin IN_A
 *.opin Y
 x1 VDD IN_A Y 0 not_std
