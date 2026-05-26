@@ -150,7 +150,7 @@ The following tables summarize the key performance metrics for the different imp
 
 ### 8-Bit Parity Generator Performance
 
-| Implementation | Worst-Case Delay | Output Rise Time | Output Fall Time | Average Dynamic Power | Static Leakage Power | Power-Delay Product |
+| Implementation | Propagation Delay | Output Rise Time | Output Fall Time | Average Dynamic Power | Static Leakage Power | Power-Delay Product |
 |---|---|---|---|---|---|---|
 | **XOR 6T (Cascaded)** | 14.79 ps | 8.93 ns | 5.94 ns | 12.98 µW | 6.16 nW | 0.19 pJ |
 | **XOR 6T (Balanced)** | 4.30 ns | 9.11 ns | 5.87 ns | 5.55 µW | 57.44 nW | 23.87 pJ |
@@ -171,6 +171,6 @@ The following tables summarize the key performance metrics for the different imp
 - [x] Gate-level simulation
 - [x] Circuit-level schematic
 - [x] Circuit-level simulation
-- [ ] Gate-level Layout
-- [ ] Circuit-level Layout
+- [ ] Gate-level layout
+- [ ] Circuit-level layout
 - [ ] Final report

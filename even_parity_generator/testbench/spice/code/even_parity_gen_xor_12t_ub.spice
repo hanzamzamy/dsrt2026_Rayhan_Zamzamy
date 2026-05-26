@@ -57,7 +57,7 @@ V_IN7 IN_7 0 pulse(0 1.8 1ns 100ps 100ps 639ns 1280ns)
   * --- TIMING & POWER ANALYSIS ---
   setplot tran1
 
-  * Measure Worst-Case Path Delay
+  * Measure Path Delay
   * IN_0 is the fastest switching input. Measure how long it takes to reach the output.
   meas tran t_delay trig v(in_0) val=0.9 cross=1 targ v(out_parity) val=0.9 cross=1
 
