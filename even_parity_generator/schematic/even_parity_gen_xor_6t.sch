@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 N -360 -440 -360 -430 {lab=VDD}
-N -720 -480 -710 -480 {lab=VDD}
-N -720 -450 -710 -450 {lab=GND}
+N 100 -360 110 -360 {lab=VDD}
+N 100 -330 110 -330 {lab=GND}
 N -360 -290 -360 -280 {lab=GND}
 N -360 -230 -360 -220 {lab=VDD}
 N -360 -80 -360 -70 {lab=GND}
@@ -48,11 +48,11 @@ N 0 -50 30 -50 {lab=#net6}
 N 0 -30 30 -30 {lab=#net5}
 N -60 -250 0 -250 {lab=#net6}
 N 170 -40 360 -40 {lab=O0}
-C {iopin.sym} -720 -480 0 1 {name=p1 lab=VDD}
-C {iopin.sym} -720 -450 0 1 {name=p2 lab=GND}
+C {iopin.sym} 100 -360 0 1 {name=p1 lab=VDD}
+C {iopin.sym} 100 -330 0 1 {name=p2 lab=GND}
 C {lab_wire.sym} -360 -440 0 0 {name=p3 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -710 -480 0 1 {name=p4 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -710 -450 0 1 {name=p5 sig_type=std_logic lab=GND}
+C {lab_wire.sym} 110 -360 0 1 {name=p4 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 110 -330 0 1 {name=p5 sig_type=std_logic lab=GND}
 C {lab_wire.sym} -360 -280 2 1 {name=p6 sig_type=std_logic lab=GND}
 C {lab_wire.sym} -360 -230 0 0 {name=p7 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} -360 -70 2 1 {name=p8 sig_type=std_logic lab=GND}
